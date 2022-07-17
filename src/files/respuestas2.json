@@ -1,0 +1,26 @@
+[
+  {
+ "pregunta": "1 Qué son los componentes?",
+ "respuesta": "\n Los componentes son etiquetas especiales las cuales tienen una interfaz y un comportamiento personalizado.\nLos mismos deben definirse en vue como components y pueden tener asignados valores como texto con etiquetado  ej holaComponente:'<p>Hola componente</p>'\nEl mismo se puede ver reflejado en un documento html como :  <holaComponente></holaComponente>"
+  },
+  {
+ "pregunta": "2 ¿En qué partes se divide un componente?",
+ "respuesta": "\n Los componentes se componen de 3 partes separados por tags. \n\n<template>La vista:En lo que es la vista está todo el contenido dentro de la etiqueta template., Adentro de un template No se puede crear otro templates  (para ello se reutilizan componentes de vue).</template>\n\n<script> La lógica:  Es donde va la funcionalidad, comportamiento del componente. Donde se crean variables, métodos, donde están los hooks de los ciclos de vida del componente.  Los mismos pueden ser exportables, reutilizables desde componentes de niveles superiores, se los puede crear un name: paraIdentificarAlComponente ,  pero no es obligatorio</script>\n\n<style> Algunos estilos: En realidad se pueden agregar en el componente o fuera del mismo. Tiene la característica de ponerse como opción <style scoped>  que significa que los estilos que se apliquen serán para dicho componente y No componentes externos.  </style>\n\n"
+  }
+,
+  {
+ "pregunta": "3  ¿Por qué se dice que un componente es reutilizable?",
+ "respuesta": "\n Se dice que los componentes son reutilizables porque pueden importarse desde otros componentes y utilizarse como instancia. Al importarse y utilizarse se declara similar a algo como lo siguiente <comoInstancia></comoInstancia> .  También se les puede mandar mensajes a los componentes o atributos que dentro de ese componente hijo de declara como props:{} (de lo contrario el mensaje o atributo a pasar no tendría ningún sentido de utilidad).\n Ej  <componenteHijo identidad=”hola soy tu hijo” /> \n Otra característica es que a la hora de reutilizar componentes, es por ejemplo si reutilizamos dos veces un mismo componente. Los mismos son dos instancias distintas."
+  }
+,
+  {
+ "pregunta": "4 ¿Qué son las directivas? Mencione al menos 3 que pertenezcan a Vue Js.",
+ "respuesta": "\n Directivas de vue son atributos especiales que se colocan a las etiquetas html se prefijan con v-  hay de varios tipos. Son para acciones dinámicas algunas de ellas. Las mismas se componen de:\n\n[Directiva]: su nombre de directiva a -veces abreviado- [Argumento]: ciertas directivas se indica un parámetro.[Valor]:Ciertas directivas se establecen con un valor Ej atributo HTML.\nTipos de directivas en Vue:\n\nv-model  :  Donde se enlaza el valor de una variable, con un <input> <select> <textArea> o bien un componente.\n\nv-if: Es una directiva de control en donde se pregunta algo como un if de programación . Acepta una expresión javascript como parámetro.\n\nv-for : Es un bucle para recorrer objetos, o arrays, números o strings también siempre y cuando tenga un principio y un punto de corte final.\n\nv-on: Es otra directiva la cual por ejemplo gestiona eventos del DOM desde los templates de vue. Hace más cómoda su utilización permite escribir menos código  ej:<button v-on:click=”llamarMethodEnVue()”>"
+  }
+,
+  {
+ "pregunta": "4  ¿En qué patrones se basa el comportamiento de los componentes de VueJs?",
+ "respuesta": "\nVue se basa en dos patrones:\n\n1-Patrón MVVM: Similares son los patrones MVC: Modelo Vista controlador. Aunque si hablamos de vue.js es más para lo que es front-end. Ahora no es un controlador sino un VIewModel.\nView <-> ViewModel <-> Model\n\nSiendo el modelo el contenedor de lo que es la lógica del negocio y los datos. Este es contenedor de la información (es el mismo modelo cuando hablamos de MVC).\nLa vista: Es quien representa la información a través de elementos visuales que la componen. Esta vista contiene eventos, links y formas que necesiten tener conocimiento del modelo (por eso tenemos vue). (vista similar a la del patrón MVC).\nModelView:  Es el enlazador entre modelo y la vista., tiene un carácter de enlazador.\n\n2-Patrón Observer:Patrón con la necesidad de notificar cambios de estado. Tenemos 1 objeto observado(objeto publicador) y N observadores los cuales son notificados cuando el objeto observado lo decida.\nEjemplo: Un grupo de personas las cuales son independientes unas a otras les gusta un canal de youtube y se suscriben.   El canal de youtube quien viene a ser de sujeto observado decide cuando enviar notificaciones a sus suscriptores sus observadores. En gral es cuando hacen un video nuevo (viene a ser el cambio de estado el cual notifica) a sus suscriptores porque mantiene una lista de los mismos. Otra característica es que los suscriptores pueden abandonar el canal en cualquier momento o bien pueden dejar de escuchar en algunos periodos de tiempo decidibles.\n\nVue es reactivo. Se asimila bastante a este patrón en el sentido que algunas variables dependiendo el estado que tengan generan comportamientos que alteran o generan cambios en la vista. Cada vez que se actualicen los datos que utilizamos en vue, la vista html  (sus componentes) lo hace de forma automática para que coincida con la lógica de programación de la aplicación en tiempo real."
+  }
+
+]

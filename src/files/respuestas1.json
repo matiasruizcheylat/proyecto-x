@@ -1,0 +1,21 @@
+[
+  {
+ "pregunta": "1 ¿Cuáles son las distintas formas de instalar Vue?",
+ "respuesta": "\n A-Manualmente con la etiqueta script con la ruta de vue.\n ej:<script src='https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js'></script> \n La desventaja es buscar la version de Vue se quiere trabajar y que sea la versión de producción en el sitio publicado.\n2-Instalación más automática con el gestor de paquetes NPM. Que incluye a vue > npm install vue\n3-Cli: con la propia CLI de vue. La misma tiene builds para desarrollar en frontend. Con ella se puede montar de forma rápida un proyecto con vue create app-name. De ella se eligen ajustes como la versión de vue para elegir disponible. Los paquetes a instalar dependiendo si se elige la configuración manual. También se pone en marcha la aplicación con npm run serve por default localhost:8080"
+  },
+  {
+ "pregunta": "2 Instalar node.js y vue-cli",
+ "respuesta": "\nPara instalar Node.js: ir al sitio:  https://nodejs.org/es/download/ \n\n Para Instalar vue-cli parado en la terminal del sistema (símbolo del sistema): npm install –g @vue/cli"
+  }
+,
+  {
+ "pregunta": "3 Crear un proyecto con vue-cli.",
+ "respuesta": "\n Parado en una carpeta donde crear proyectos y abriendo un terminal :\n>  vue create proyecto-x \n (luego se abre la vue-cli pidiendo formas de intalar el proyecto creado sea manual –eligiendo módulos a instalar- o automática). \nPersonalmente elegí la forma manual y agregué el router como módulo y los otros que estaban como referencia. Vue 2.x"
+  }
+,
+  {
+ "pregunta": "4  Subir el proyecto a Github.",
+ "respuesta": "\n Creado proyecto -público- y vinculado con el repositorio remoto.\nhttps://github.com/matiasruizcheylat/proyecto-x"
+  }
+
+]

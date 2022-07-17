@@ -1,0 +1,85 @@
+body {
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+    padding-bottom: 70px;
+}
+
+nav {
+    background: #7a4488;
+    height: 40px;
+}
+
+nav a,
+nav a.router-link-exact-active {
+    font-size: 20px;
+    padding: 10px;
+    color: #ffffff;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: #ddddff;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a.router-link-exact-active {
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.container h3 {
+    padding: 20px 50px;
+}
+
+.footer {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 40px;
+    width: 100%;
+    background: #7a4488;
+}
+
+.recuadro {
+    border-radius: 10px;
+    border: 1px solid grey;
+    padding: 20px;
+    margin: 20px;
+}
+
+.table {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.table th {
+    text-align: center;
+    border-bottom: 2px solid #AAAAAA;
+    padding: 5px;
+}
+
+.table td {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #DDDDFF;
+}
+
+.error {
+    padding: 20px;
+    margin: 20px;
+    color: #ffffff;
+    background-color: #ff2222;
+    font-size: 18px;
+    border-radius: 10px;
+}

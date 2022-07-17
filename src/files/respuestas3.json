@@ -1,0 +1,22 @@
+[
+  {
+ "pregunta": "1 ¿Qué es una SPA?",
+ "respuesta": "\n  Una web o spa, es una página donde todo el contenido sea el código html, Javascript y css se carga una sola vez ., su contenido ya está precargado de antemano, es por eso que es tan rápido. A veces se le puede hacer peticiones de datos o elementos, y estos se cargan de manera dinámica si se requieren sin necesidad de cargar nuevamente toda la página. Se puede tener diferentes vistas pero en una sola página."
+  },
+  {
+ "pregunta": "2 Al realizar una SPA, ¿tendremos una sola URL en nuestro proyecto?",
+ "respuesta": "\n No., puede suceder que la url cambie pero apunte a la misma página, por tanto no se cambia y recarga otra página. Todo está en una sola y lo que cambia es su contenido.\n Ejemplos de ello abundan. Se puede cambiar la url por un identificador de un elemento a buscar ej una vista que muestra los posteos de un usuario y dependiendo en la url el /:id de ese usuario varía el usuario ese que tenemos y los posteos que tiene."
+  }
+,
+  {
+ "pregunta": "3 ¿Qué es Vue-Router?",
+ "respuesta": "\n Es una librería de Vue la cual se encarga de enrutar desde el lado del cliente., el mismo tiene las herramientas necesarias para asignar componentes de una aplicación a diferentes URLs del navegador.\n Contiene lo que es una instancia o un router= new VueRouter({}) con ciertos atributos y cosntantes. De ellas hay un atributo que referencia a un objeto en formato json que contiene todo lo que son rutas o paths:’/’ siendo esa la raíz y el nombre del component: que contiene cada una de ellas separadas por llaves { }, y pudiendo poder agregarse rutas nuevas vinculadas siempre a componentes de vue."
+  }
+,
+  {
+ "pregunta": "4 ¿Cómo instalamos Vue-Router?",
+ "respuesta": "\n Se puede instalar de varias maneras.\nA En la instalación personalizada de vue se puede agregar como módulo.\n\nB Otras formas de instalar son con comandos como npm install vue-router –save.\nC Con la vue-cli se puede instalar también con el comando:  vue add router.\nLo que se instala son algunos archivos .js ubicados en ciertos directorios estandarizados.\n\n1-Se crea el archivo src/router/index.js el cual define las rutas y configuraciones del router.  En gral pone 2 rutas por default ‘/’ una ruta raíz y ‘/about’  otra ruta de otro archivo.\n2-Ambas rutas son referencias a dos componentes de vue  ubicados en views uno llamado AboutView.vue y el otro llamado HomeView.vue.\n3-En donde se agrega el router a la instancia principal de vue es en el archivo src/main.js.\n4-En el archivo src/App.vue además se agregan en forma de links  <router-link to=”/” > para home y <router-link to=”/about” > para about.\n Dependiendo la forma de instalar el router. Cuando se lo agrega como módulo a la hora de instalar vue, o bien con vue-cli   se agrega de forma automática.  En cambio si se instala con npm se deben agregar todos estos archivos de forma manual definiendo el router., su instancia agregada a la instancia de vue en main.js ….\n Una idea práctica es por ejemplo (en proyectos de más tamaño) hacer en el archivo src/router/index.js el import de arrays de otros archivos con enrutamientos., siempre que respeten el formato deestar separados por llaves y tener la referencia al link {path: }"
+  }
+
+
+]
